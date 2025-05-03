@@ -9,11 +9,12 @@ pluginManagement {
 				includeGroup("com.gtnewhorizons.retrofuturagradle")
 			}
 		}
-		maven("https://maven.minecraftforge.net/")
-		maven("https://maven.fabricmc.net")
-		maven("https://repo.sleeping.town")
 		maven("https://maven.architectury.dev/")
-		maven("https://repo.sk1er.club/repository/maven-releases/")
+		maven("https://maven.fabricmc.net")
+		maven("https://maven.minecraftforge.net/")
+		maven("https://repo.essential.gg/repository/maven-public/")
+		maven("https://repo.essential.gg/repository/maven-releases/")
+		maven("https://repo.sleeping.town")
 		mavenLocal()
 		mavenCentral()
 		gradlePluginPortal()
@@ -22,7 +23,6 @@ pluginManagement {
 		eachPlugin {
 			when (requested.id.id) {
 				"gg.essential.loom" -> useModule("gg.essential:architectury-loom:${requested.version}")
-				"agency.highlysuspect.voldeloom" -> {}
 			}
 		}
 	}
@@ -40,11 +40,12 @@ dependencyResolutionManagement {
 				includeGroup("com.gtnewhorizons.retrofuturagradle")
 			}
 		}
-		maven("https://maven.minecraftforge.net/")
-		maven("https://maven.fabricmc.net")
-		maven("https://repo.sleeping.town")
 		maven("https://maven.architectury.dev/")
-		maven("https://repo.sk1er.club/repository/maven-releases/")
+		maven("https://maven.fabricmc.net")
+		maven("https://maven.minecraftforge.net/")
+		maven("https://repo.essential.gg/repository/maven-public/")
+		maven("https://repo.essential.gg/repository/maven-releases/")
+		maven("https://repo.sleeping.town")
 		mavenLocal()
 		mavenCentral()
 		gradlePluginPortal()

@@ -3,8 +3,8 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
 plugins {
-	id("gg.essential.loom") version "1.5.+"
-	id("dev.architectury.architectury-pack200") version "latest.release"
+	id("gg.essential.loom") version "0.10.0.5"
+	id("dev.architectury.architectury-pack200") version "0.1.3"
 }
 
 group = "com.github.hummel"
