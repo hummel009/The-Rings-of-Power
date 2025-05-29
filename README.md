@@ -21,7 +21,7 @@ Take the ring and become truly invincible!
 
 [Rinth]: https://modrinth.com/mod/the-rings-of-power
 
-[Logo]: the-rings-of-power.jpg
+[Logo]: readme.jpg
 
 [Badge License]: https://img.shields.io/badge/License-GPL_3-0167a0.svg?style=for-the-badge&labelColor=blue
 
