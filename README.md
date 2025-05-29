@@ -16,10 +16,9 @@
 
 <div align = "center">
 
-Мод «The Rings of Power» – небольшой, но полезный мод, который добавляет в игру кольца власти из вселенной
-«Властелина колец». Здесь вы найдёте и эльфийские, и гномьи, и людские кольца, и, конечно же, кольцо Всевластия!
-Каждое кольцо накладывает временные эффекты на ПКМ и постоянный эффект во время нахождения в вашем инвентаре, и с ними
-вы будете по-настоящему непобедимы!
+The Rings of Power mod is a small but useful mod that adds rings of power from the Lord of the Rings universe to the game.
+Here you will find elven, dwarven, and human rings, and, of course, the One Ring!
+Each ring imposes temporary effects on RMB and a permanent effect while in your inventory, and with them you will be truly invincible!
 
 </div>
 
