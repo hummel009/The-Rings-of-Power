@@ -1,3 +1,3 @@
 plugins {
-	id("fabric-loom") version "latest.release" apply false
+	id("fabric-loom") version "1.10-SNAPSHOT" apply false
 }
