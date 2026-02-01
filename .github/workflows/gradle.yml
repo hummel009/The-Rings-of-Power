@@ -9,7 +9,7 @@ on:
 permissions:
   contents: read
 jobs:
-  build-forge-3-6:
+  build-forge-03-06:
     runs-on: windows-latest
     strategy:
       matrix:
@@ -31,9 +31,9 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@main
         with:
-          name: archive-forge-${{matrix.version}}
+          name: forge-${{matrix.version}}
           path: ./forge/${{matrix.version}}/build/libs/*.jar
-  build-forge-7:
+  build-forge-07:
     runs-on: windows-latest
     strategy:
       matrix:
@@ -55,9 +55,9 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@main
         with:
-          name: archive-forge-${{matrix.version}}
+          name: forge-${{matrix.version}}
           path: ./forge/${{matrix.version}}/build/libs/*.jar
-  build-forge-11-12:
+  build-forge-08-12:
     runs-on: windows-latest
     strategy:
       matrix:
@@ -79,7 +79,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@main
         with:
-          name: archive-forge-${{matrix.version}}
+          name: forge-${{matrix.version}}
           path: ./forge/${{matrix.version}}/build/libs/*.jar
   build-forge-13-20:
     runs-on: windows-latest
@@ -103,7 +103,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@main
         with:
-          name: archive-forge-${{matrix.version}}
+          name: forge-${{matrix.version}}
           path: ./forge/${{matrix.version}}/build/libs/*.jar
   build-fabric:
     runs-on: windows-latest
@@ -127,17 +127,17 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@main
         with:
-          name: archive-fabric-${{matrix.version}}
+          name: fabric-${{matrix.version}}
           path: ./fabric/${{matrix.version}}/build/libs/*.jar
   merge-forge:
     runs-on: windows-latest
-    needs: [ build-forge-3-6, build-forge-7, build-forge-8-12, build-forge-13-20 ]
+    needs: [ build-forge-03-06, build-forge-07, build-forge-08-12, build-forge-13-20 ]
     steps:
       - name: Merge Artifacts
         uses: actions/upload-artifact/merge@main
         with:
-          name: archive-forge
-          pattern: archive-forge-*
+          name: forge
+          pattern: forge-*
           delete-merged: true
   merge-fabric:
     runs-on: windows-latest
@@ -146,6 +146,6 @@ jobs:
       - name: Merge Artifacts
         uses: actions/upload-artifact/merge@main
         with:
-          name: archive-fabric
-          pattern: archive-fabric-*
+          name: fabric
+          pattern: fabric-*
           delete-merged: true
