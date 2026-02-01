@@ -1,3 +1,3 @@
 plugins {
-	id("fabric-loom-remap") version "latest.release" apply false
+	id("net.fabricmc.fabric-loom-remap") version "latest.release" apply false
 }
