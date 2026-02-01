@@ -136,7 +136,7 @@ jobs:
       - name: Merge Artifacts
         uses: actions/upload-artifact/merge@main
         with:
-          name: forge
+          name: forge-builds
           pattern: forge-*
           delete-merged: true
   merge-fabric:
@@ -146,6 +146,6 @@ jobs:
       - name: Merge Artifacts
         uses: actions/upload-artifact/merge@main
         with:
-          name: fabric
+          name: fabric-builds
           pattern: fabric-*
           delete-merged: true
