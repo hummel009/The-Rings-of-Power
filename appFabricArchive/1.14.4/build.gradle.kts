@@ -2,7 +2,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
 plugins {
-	id("fabric-loom")
+	id("fabric-loom-remap")
 }
 
 group = "com.github.hummel"
