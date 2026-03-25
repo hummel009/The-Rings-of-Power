@@ -6,7 +6,7 @@
 
 The Rings of Power mod is a small but useful mod that adds rings of power from the Lord of the Rings universe to the game. Here you will find elven, dwarven, and human rings, and, of course, the One Ring! Each ring imposes temporary effects on RMB and a permanent effect while in your inventory. Take the ring and become truly invincible!
 
-![Logo]
+![README]
 
 </div>
 
@@ -18,7 +18,7 @@ The Rings of Power mod is a small but useful mod that adds rings of power from t
 
 [Rinth]: https://modrinth.com/mod/the-rings-of-power
 
-[Logo]: readme.jpg
+[README]: README.jpg
 
 [Badge License]: https://img.shields.io/badge/License-GPL_3-0167a0.svg?style=for-the-badge&labelColor=blue
 
