@@ -7,7 +7,7 @@ plugins {
 	id("dev.architectury.architectury-pack200") version "0.1.3"
 }
 
-group = "com.github.hummel"
+group = "io.github.hummel009"
 version = LocalDate.now().format(DateTimeFormatter.ofPattern("yy.MM.dd"))
 
 dependencies {

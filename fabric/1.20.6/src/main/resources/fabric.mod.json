@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.github.hummel.trop.Main"
+			"io.github.hummel009.minecraft.trop.Main"
 		]
 	},
 	"depends": {

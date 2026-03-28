@@ -5,7 +5,7 @@ plugins {
 	id("com.gtnewhorizons.retrofuturagradle") version "1.4.9"
 }
 
-group = "com.github.hummel"
+group = "io.github.hummel009"
 version = LocalDate.now().format(DateTimeFormatter.ofPattern("yy.MM.dd"))
 
 dependencies {
