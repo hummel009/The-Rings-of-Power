@@ -8,10 +8,6 @@ plugins {
 group = "io.github.hummel009"
 version = LocalDate.now().format(DateTimeFormatter.ofPattern("yy.MM.dd"))
 
-dependencies {
-	implementation(rfg.deobf(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar")))))
-}
-
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(8)
