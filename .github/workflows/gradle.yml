@@ -81,11 +81,11 @@ jobs:
         with:
           name: forge-${{matrix.version}}
           path: ./forge/${{matrix.version}}/build/libs/*.jar
-  build-forge-13-20:
+  build-forge-13-19:
     runs-on: windows-latest
     strategy:
       matrix:
-        version: [ '1.13.2', '1.14.4', '1.15.2', '1.16.5', '1.17.1', '1.18.2', '1.19.4', '1.20.6' ]
+        version: [ '1.13.2', '1.14.4', '1.15.2', '1.16.5', '1.17.1', '1.18.2', '1.19.4' ]
     steps:
       - uses: actions/checkout@main
       - name: Set up JDK 21
@@ -109,7 +109,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        version: [ '1.14.4', '1.15.2', '1.16.5', '1.17.1', '1.18.2', '1.19.4', '1.20.6' ]
+        version: [ '1.14.4', '1.15.2', '1.16.5', '1.17.1', '1.18.2', '1.19.4' ]
     steps:
       - uses: actions/checkout@main
       - name: Set up JDK 21
@@ -131,7 +131,7 @@ jobs:
           path: ./fabric/${{matrix.version}}/build/libs/*.jar
   merge-forge:
     runs-on: windows-latest
-    needs: [ build-forge-03-06, build-forge-07, build-forge-08-12, build-forge-13-20 ]
+    needs: [ build-forge-03-06, build-forge-07, build-forge-08-12, build-forge-13-19 ]
     steps:
       - name: Merge Artifacts
         uses: actions/upload-artifact/merge@main
