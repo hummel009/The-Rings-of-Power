@@ -1,22 +1,6 @@
 pluginManagement {
 	repositories {
-		maven {
-			name = "Fabric"
-			url = uri("https://maven.fabricmc.net/")
-		}
-		mavenLocal()
-		mavenCentral()
-		gradlePluginPortal()
-	}
-}
-
-dependencyResolutionManagement {
-	repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
-	repositories {
-		maven {
-			name = "Fabric"
-			url = uri("https://maven.fabricmc.net/")
-		}
+		maven("https://maven.fabricmc.net")
 		mavenLocal()
 		mavenCentral()
 		gradlePluginPortal()
@@ -24,7 +8,7 @@ dependencyResolutionManagement {
 }
 
 plugins {
-	id("org.gradle.toolchains.foojay-resolver-convention") version "0.10.0"
+	id("org.gradle.toolchains.foojay-resolver-convention") version "0.10.+"
 }
 
 include(":1.14.4")
