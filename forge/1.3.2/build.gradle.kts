@@ -8,13 +8,10 @@ plugins {
 group = "io.github.hummel009"
 version = LocalDate.now().format(DateTimeFormatter.ofPattern("yy.MM.dd"))
 
-val minecraftVersion: String = "1.3.2"
-val forgeVersion: String = "1.3.2-4.3.5.318"
-
 dependencies {
-	minecraft("com.mojang:minecraft:$minecraftVersion")
-	forge("net.minecraftforge:forge:$forgeVersion:universal@zip")
-	mappings("net.minecraftforge:forge:$forgeVersion:src@zip")
+	minecraft("com.mojang:minecraft:1.3.2")
+	forge("net.minecraftforge:forge:1.3.2-4.3.5.318:universal@zip")
+	mappings("net.minecraftforge:forge:1.3.2-4.3.5.318:src@zip")
 }
 
 java {

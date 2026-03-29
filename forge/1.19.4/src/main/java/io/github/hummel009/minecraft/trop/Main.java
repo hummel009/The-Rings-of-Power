@@ -13,6 +13,7 @@ public class Main {
 	@SuppressWarnings("unused")
 	public static final String DISABLE_CURSEFORGE_DUPLICATE_NOTICE = "111229022024";
 
+	@SuppressWarnings("removal")
 	public Main() {
 		var modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		var modEventHandler = new ModEventHandler();
